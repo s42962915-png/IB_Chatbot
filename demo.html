@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InBody Knowledge Assistant - Demo</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; margin: 0; background: #f4f7fb; color: #1a1a1a; }
+  .hero { background: linear-gradient(135deg, #0f6fc5, #0a4f8f); color: #fff; padding: 48px 24px; text-align: center; }
+  .hero h1 { margin: 0 0 8px; }
+  .hero p { margin: 0; opacity: 0.9; }
+  .content { max-width: 720px; margin: 32px auto; padding: 0 20px; line-height: 1.7; }
+  .card { background: #fff; border-radius: 12px; padding: 20px; margin: 16px 0; box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+  .card h3 { margin-top: 0; }
+  pre { background: #0f172a; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto; }
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>InBody Knowledge Assistant</h1>
+  <p>Try the floating chat bubble in the bottom-right corner.</p>
+</div>
+<div class="content">
+  <div class="card">
+    <h3>Embed on any website</h3>
+    <p>One script tag adds the chat widget to any page:</p>
+    <pre>&lt;script src="/widget.js" defer&gt;&lt;/script&gt;</pre>
+    <p>For an external site, use the full URL of your deployed server:</p>
+    <pre>&lt;script src="https://your-host.example.com/widget.js" defer&gt;&lt;/script&gt;</pre>
+  </div>
+  <div class="card">
+    <h3>What it answers</h3>
+    <p>The assistant answers strictly from the approved InBody documents in the
+       configured knowledge base, and shows source filenames where available.
+       It declines to guess when the documents do not support an answer.</p>
+  </div>
+</div>
+
+<script>
+  window.InBodyChatConfig = {
+    title: 'InBody Assistant',
+    primaryColor: '#0f6fc5'
+  };
+</script>
+<script src="/widget.js" defer></script>
+</body>
+</html>

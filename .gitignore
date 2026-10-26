@@ -1,0 +1,8 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+knowledge_base/*
+!knowledge_base/README.txt
+.DS_Store
